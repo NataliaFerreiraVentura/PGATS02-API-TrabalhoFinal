@@ -20,6 +20,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Rodar testes api via controller
+        run: npm run test-rest-controller
+
+      - name: Upload mochawesome report (controller)
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report-controller
+          path: mochawesome-report/
+
       - name: Subir a api rest
         run: npm run start &
 

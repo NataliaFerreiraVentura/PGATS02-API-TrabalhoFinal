@@ -1,0 +1,22 @@
+{
+    "registerSuccess": {
+        "expectedStatus": 201,
+        "expectedMessage": "Usuário criado com sucesso",
+        "expectedSuccess": true
+    },
+    "registerUserExists": {
+        "expectedStatus": 409,
+        "expectedMessage": "Usuário já existe com este username",
+        "expectedSuccess": false
+    },
+    "loginSuccess": {
+        "expectedStatus": 200,
+        "expectedMessage": "Login realizado com sucesso",
+        "expectedSuccess": true
+    },
+    "loginInvalid": {
+        "expectedStatus": 401,
+        "expectedMessage": "Dados inválidos",
+        "expectedSuccess": false
+    }
+}

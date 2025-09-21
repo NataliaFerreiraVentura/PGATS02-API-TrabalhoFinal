@@ -8,6 +8,24 @@ class UserController {
 
             const result = await UserService.registerUser(username, password);
 
+            // Verificar se o resultado contém erro
+            if (result && result.error) {
+                let status = 400;
+                let message = result.error;
+
+                // Mapear erros específicos para status codes apropriados
+                if (message.includes('já existe') || message.includes('já cadastrado')) {
+                    status = 409; // Conflict
+                } else if (message.includes('não encontrado')) {
+                    status = 404; // Not Found
+                }
+
+                return res.status(status).json({
+                    success: false,
+                    message: message
+                });
+            }
+
             res.status(201).json({
                 success: true,
                 message: 'Usuário criado com sucesso',

@@ -1,0 +1,22 @@
+[
+    {   
+        "nomeDoTeste": "Obrigatoriedade campo Username",
+        "usuarioInvalido": {
+           "username": "",
+           "password": "senha123"
+        },
+        "statusCode": 400,
+        "mensagemEsperada": "Username e senha são obrigatórios"
+    },
+
+    {   
+        "nomeDoTeste": "Usuario já existente",
+        "usuarioInvalido": {
+           "username": "Naty",
+           "password": "123456"
+        },
+        "statusCode": 409,
+        "mensagemEsperada": "Usuário já existe com este username"
+    }
+
+]

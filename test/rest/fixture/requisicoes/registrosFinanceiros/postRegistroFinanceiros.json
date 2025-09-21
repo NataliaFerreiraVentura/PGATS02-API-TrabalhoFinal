@@ -1,0 +1,23 @@
+[
+  {   
+    "nomeDoTeste": "Registro de entrada criado com sucesso",
+    "statusCode": 201,
+    "mensagemEsperada": "Registro criado com sucesso",
+    "registroFinanceiro": {
+      "tipo": "entrada",
+      "valor": 2500,
+      "descricao": "Salário mensal"
+    }
+  },
+
+  {   
+    "nomeDoTeste": "Registro de saída criado com sucesso",
+    "statusCode": 201,
+    "mensagemEsperada": "Registro criado com sucesso",
+    "registroFinanceiro": {
+      "tipo": "saida",
+      "valor": 100,
+      "descricao": "Compra no supermercado"
+    }
+  }
+]

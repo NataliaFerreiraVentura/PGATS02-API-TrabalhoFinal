@@ -24,5 +24,16 @@ describe('Testes nos endpoints de registros financeiros', () => {
             expect(resposta.body.message).to.equal(teste.mensagemEsperada);
         })
     })
-})
+    it('Deve falhar ao tentar registrar um novo registro financeiro sem token', async () => {
+        const resposta = await request(process.env.BASE_URL_REST)
+            .post('/api/registros')
+            .send({
+               "tipo": "entrada",
+               "valor": 1250.75,
+              "descricao": "Salário do mês de setembro"
+            });
+        expect(resposta.status).to.equal(401);
+        expect(resposta.body.message).to.equal('Token não informado ou inválido');
+    });
+});
 

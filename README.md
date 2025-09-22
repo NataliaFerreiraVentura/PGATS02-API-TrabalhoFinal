@@ -106,6 +106,17 @@ npm test
 npm run test-rest-external
 ```
 
+### Executar testes de controller (unitários)
+
+```bash
+npm run test-rest-controller
+```
+
+### Tipos de testes
+
+- **Testes de Controller**: Testes com mocks (não requerem servidor ativo)
+- **Testes Externos**: Testes que fazem requisições HTTP reais
+
 ### Relatórios
 
 - Os testes geram relatórios HTML com **Mochawesome**
@@ -160,15 +171,6 @@ Este projeto utiliza **banco em memória**, ideal para desenvolvimento e testes:
 - ✅ Operações extremamente rápidas
 - ✅ Sem configuração adicional
 - ⚠️ Dados não são persistidos
-
-## 🔧 Scripts Disponíveis
-
-| Script      | Comando                      | Descrição               |
-| ----------- | ---------------------------- | ----------------------- |
-| Iniciar     | `npm start`                  | Inicia o servidor       |
-| Testes      | `npm test`                   | Executa todos os testes |
-| Testes REST | `npm run test-rest-external` | Testes de integração    |
-| Lint        | `npm run lint`               | Verifica código         |
 
 ## 📁 Estrutura do Projeto
 

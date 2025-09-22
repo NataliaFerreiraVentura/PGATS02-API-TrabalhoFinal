@@ -3,14 +3,13 @@ const { expect } = require('chai');
 const chaiExclude = require('chai-exclude');
 const sinon = require('sinon');
 
-// Configurar chai-exclude
+
 const chai = require('chai');
 chai.use(chaiExclude);
 
 const app = require('../../../src/app');
 const RegistroService = require('../../../service/RegistroService');
 
-// Fixtures organizados em rest/fixture
 const mockData = require('../fixture/mocks/registroServiceMocks.json');
 const deveCriarRegistroComSucesso = require('../fixture/respostas/deveCriarRegistroComSucesso.json');
 const loginData = require('../fixture/requisicoes/Login/postLogin.json');

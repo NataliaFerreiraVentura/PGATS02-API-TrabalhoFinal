@@ -11,9 +11,8 @@ API REST para controle financeiro desenvolvida em Node.js com Express.js. Sistem
 ## ✨ Funcionalidades
 
 - 🔐 Autenticação JWT segura
-- 📊 CRUD completo de registros financeiros
 - 📚 Documentação Swagger interativa
-- 🧪 Testes automatizados (Mocha/Chai/Supertest)
+- 🧪 Testes automatizados (Mocha/Chai/Supertest/sinon)
 - 💾 Banco de dados em memória
 - 🛡️ Validação de dados e tratamento de erros
 
@@ -23,7 +22,7 @@ API REST para controle financeiro desenvolvida em Node.js com Express.js. Sistem
 - **JWT** para autenticação
 - **bcryptjs** para hash de senhas
 - **Swagger UI** para documentação
-- **Mocha/Chai/Supertest** para testes
+- **Mocha/Chai/Supertest/sinon** para testes
 
 ## 🚀 Instalação e Execução
 

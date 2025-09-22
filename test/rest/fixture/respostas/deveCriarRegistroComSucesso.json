@@ -1,0 +1,16 @@
+
+{
+  "success": true,
+  "message": "Registro criado com sucesso",
+  "data": {
+    "registro": {
+      "id": 17,
+      "tipo": "entrada",
+      "valor": 1250.75,
+      "descricao": "Salário do mês de setembro",
+      "userId": "Naty",
+      "dataRegistro": "2025-09-21T23:35:34.186Z"
+    },
+    "saldoAtual": 20450.75
+  }
+}

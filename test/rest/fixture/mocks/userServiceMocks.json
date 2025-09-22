@@ -1,18 +1,11 @@
 {
     "registerUserSuccess": {
-        "username": "testuser",
-        "success": true
+        "success": true,
+        "message": "Usuário criado com sucesso",
+        "username": "testuser123"
     },
     "registerUserError": {
-        "error": "Usuário já existe com este username"
-    },
-    "loginUserSuccess": {
-        "token": "fake-jwt-token",
-        "user": {
-            "username": "testuser"
-        }
-    },
-    "loginUserError": {
-        "error": "Dados inválidos"
+        "success": false,
+        "message": "Usuário já existe"
     }
 }

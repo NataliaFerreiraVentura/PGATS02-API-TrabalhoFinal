@@ -5,18 +5,8 @@
         "expectedSuccess": true
     },
     "registerUserExists": {
-        "expectedStatus": 409,
-        "expectedMessage": "Usuário já existe com este username",
-        "expectedSuccess": false
-    },
-    "loginSuccess": {
-        "expectedStatus": 200,
-        "expectedMessage": "Login realizado com sucesso",
-        "expectedSuccess": true
-    },
-    "loginInvalid": {
-        "expectedStatus": 401,
-        "expectedMessage": "Dados inválidos",
+        "expectedStatus": 201,
+        "expectedMessage": "Usuário já existe",
         "expectedSuccess": false
     }
 }

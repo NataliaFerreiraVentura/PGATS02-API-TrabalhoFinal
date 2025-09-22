@@ -6,7 +6,7 @@ require('dotenv').config();
 describe('Testes nos endpoints para registro e login de usuarios', () => {
 
     it(' Ao informar dados válidos, deve registrar um novo usuário e retornar status 201 ', async () => {        
-        // Usar fixture para gerar usuário único
+      
         const { generateUniqueUser } = require('../fixture/requisicoes/CreateUser/generateUserData');
         const usuarioUnico = generateUniqueUser();
         

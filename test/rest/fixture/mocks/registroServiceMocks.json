@@ -1,0 +1,17 @@
+{
+    "criarRegistroSuccess": {
+        "success": true,
+        "message": "Registro criado com sucesso",
+        "data": {
+            "id": 17,
+            "tipo": "entrada", 
+            "valor": 1250.75,
+            "descricao": "Salário do mês de setembro",
+            "dataRegistro": "2025-09-21T23:35:34.186Z",
+            "userId": "Naty"
+        }
+    },
+    "criarRegistroInvalido": {
+        "message": "Campo descrição é obrigatório"
+    }
+}

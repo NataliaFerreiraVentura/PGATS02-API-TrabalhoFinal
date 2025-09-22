@@ -5,6 +5,8 @@
     "main": "src/server.js",
     "scripts": {
         "start": "node src/server.js",
+        "start:rest": "node src/server.js",
+        "start:graphql": "node src/graphql/server.js",
         "test": "mocha test/**/*.test.js --timeout 10000 --reporter mochawesome",
         "test-rest-external": "mocha test/rest/external/**/*.test.js --timeout 10000 --reporter mochawesome",
         "test-rest-controller": "mocha test/rest/controller/**/*.test.js --timeout 10000 --reporter mochawesome",
@@ -12,15 +14,18 @@
         "lint:fix": "eslint src/ --ext .js --fix"
     },
     "dependencies": {
+        "@apollo/server": "^4.12.2",
         "bcryptjs": "^2.4.3",
+        "chai-exclude": "^2.1.0",
         "cors": "^2.8.5",
-        "express": "^4.18.2",
+        "express": "^4.19.2",
+        "graphql": "^16.8.1",
+        "graphql-tag": "^2.12.6",
         "jsonwebtoken": "^9.0.2",
         "swagger-ui-express": "^5.0.0"
     },
     "devDependencies": {
         "chai": "^6.0.1",
-        "chai-exclude": "^3.0.1",
         "dotenv": "^17.2.2",
         "eslint": "^8.57.1",
         "mocha": "^11.7.2",

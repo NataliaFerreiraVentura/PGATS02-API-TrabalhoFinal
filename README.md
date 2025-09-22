@@ -1,9 +1,5 @@
 # PGATS API - Trabalho Final
 
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-4.18.2-blue)](https://expressjs.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## 📋 Sobre o Projeto
 
 API REST para controle financeiro desenvolvida em Node.js com Express.js. Sistema completo de autenticação JWT e gerenciamento de registros financeiros.
